@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -15,19 +14,140 @@
     <link rel="stylesheet" href="assets/css/Pretty-Product-List.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
+    <title>Alexander Persky Milestone 4 - Twitter</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;"href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;" href="#"><i class="fa fa-search"></i>&nbsp;Search</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="profile.html"><i class="fa fa-user-circle-o"></i>&nbsp;Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="login.html"><i class="fa fa-sign-out"></i>&nbsp;Sign Out</a></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <main>
+ 
+        <header>
+            <form class="compose">
+                <textarea placeholder="Compose new Tweet..."></textarea>
 
-<body><div class="login-dark">
-    <form method="post">
-        <h2 class="sr-only">Login Form</h2>
-        <div class="illustration"><img src="assets/img/logo.png" width="120px"></div>
-        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
-        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a></form>
-</div>
+                <div>
+                    <span class="count">140</span>
+                    <button>Send</button>
+                </div>
+            </form>
+        </header>
+
+        <div class="tweets">
+            <div class="thread">
+                <div class="tweet">
+                    <img src="images/rockit.png">
+
+                    <div class="body">
+                        <div class="title">@ROCKIT_BOOTCAMP</div>
+                        <div class="message">tweet tweet!!</div>
+                    </div>
+                </div>
+
+                <div class="replies">
+                    <form class="compose">
+                        <textarea placeholder="Compose new Tweet..."></textarea>
+
+                        <div>
+                            <span class="count">140</span>
+                            <button>Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="thread">
+                <div class="tweet">
+                    <img src="images/rockit.png">
+
+                    <div class="body">
+                        <div class="title">@ROCKIT_BOOTCAMP</div>
+                        <div class="message">Hey who wants to teach?</div>
+                    </div>
+                </div>
+
+                <div class="replies">
+                    <form class="compose">
+                        <textarea placeholder="Compose new Tweet..."></textarea>
+
+                        <div>
+                            <span class="count">140</span>
+                            <button>Send</button>
+                        </div>
+                    </form>
+
+                    <div class="tweet">
+                        <img src="images/brad.png">
+
+                        <div class="body">
+                            <div class="title">@bradwestfall</div>
+                            <div class="message">I do!</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet">
+                        <img src="images/rockit.png">
+
+                        <div class="body">
+                            <div class="title">@ROCKIT_BOOTCAMP</div>
+                            <div class="message">sweet!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Handlebars Templates -->
+    <script id="template-tweet" type="text/x-handlebars-template">
+        <div class="tweet">
+            <img src="images/{{ img }}">
+
+            <div class="body">
+                <div class="title">{{ handle }}</div>
+                <div class="message">{{ message }}</div>
+            </div>
+        </div>
+    </script>
+
+    <script id="template-compose" type="text/x-handlebars-template">
+        <div class="replies">
+            <form class="compose">
+                <textarea placeholder="Compose new Tweet..."></textarea>
+
+                <div>
+                    <span class="count">140</span>
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+    </script>
+
+    <script id="template-thread" type="text/x-handlebars-template">
+        <div class="thread">
+            {{{ tweetTemplate }}}
+            {{{ composeTemplate }}}
+        </div>
+    </script>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/main.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Navbar---Apple.js"></script>
 </body>
-
 </html>
