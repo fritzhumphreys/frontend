@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -14,103 +15,165 @@
     <link rel="stylesheet" href="assets/css/Pretty-Product-List.css">
     <link rel="stylesheet" href="assets/css/profile.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Alexander Persky Milestone 4 - Twitter</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div>
-        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
-            <div class="container-fluid"><a class="navbar-brand" href="index.html"><i class="fab fa-twitter"></i>&nbsp;Twitter</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
+        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button"
+            style="height:80px;background-color:#37434d;color:#ffffff;">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html"><i
+                        class="fab fa-twitter"></i>&nbsp;Twitter</a><button data-toggle="collapse"
+                    class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;"href="index.html"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;" href="#"><i class="fa fa-search"></i>&nbsp;Search</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="profile.html"><i class="fa fa-user-circle-o"></i>&nbsp;Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="login.html"><i class="fa fa-sign-out"></i>&nbsp;Sign Out</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;" href="index.html"><i
+                                    class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #ffffff;" href="#"><i
+                                    class="fa fa-search"></i>&nbsp;Search</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="profile.html"><i
+                                    class="fa fa-user-circle-o"></i>&nbsp;Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:#ffffff;" href="login.html"><i
+                                    class="fa fa-sign-out"></i>&nbsp;Sign Out</a></li>
                     </ul>
+                </div>
             </div>
+        </nav>
     </div>
-    </nav>
-    </div>
-    <main>
- 
-        <header>
-            <form class="compose">
-                <textarea placeholder="Compose new Tweet..."></textarea>
 
-                <div>
-                    <span class="count">140</span>
-                    <button>Send</button>
+    <!-- bagian kiri  -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3 well">
+                <div class="well">
+                    <p><a href="#">My Profile</a></p>
+                    <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
                 </div>
-            </form>
-        </header>
-
-        <div class="tweets">
-            <div class="thread">
-                <div class="tweet">
-                    <img src="images/rockit.png">
-
-                    <div class="body">
-                        <div class="title">@ROCKIT_BOOTCAMP</div>
-                        <div class="message">tweet tweet!!</div>
-                    </div>
+                <div class="well">
+                    <p><a href="#">Interests</a></p>
+                    <p>
+                        <span class="label label-default">News</span>
+                        <span class="label label-primary">W3Schools</span>
+                        <span class="label label-success">Labels</span>
+                        <span class="label label-info">Football</span>
+                        <span class="label label-warning">Gaming</span>
+                        <span class="label label-danger">Friends</span>
+                    </p>
                 </div>
+                <div class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                    <p><strong>Ey!</strong></p>
+                    People are looking at your profile. Find out who.
+                </div>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+            </div>
 
-                <div class="replies">
+<!-- bagian nge-tweet -->
+            
+            <div class="col-sm-7">
+                <main>
+                <header>
                     <form class="compose">
                         <textarea placeholder="Compose new Tweet..."></textarea>
-
+        
                         <div>
                             <span class="count">140</span>
                             <button>Send</button>
                         </div>
                     </form>
+                </header>
+        
+                <div class="tweets">
+                    <div class="thread">
+                        <div class="tweet">
+                            <img src="images/rockit.png">
+        
+                            <div class="body">
+                                <div class="title">@ROCKIT_BOOTCAMP</div>
+                                <div class="message">tweet tweet!!</div>
+                            </div>
+                        </div>
+        
+                        <div class="replies">
+                            <form class="compose">
+                                <textarea placeholder="Compose new Tweet..."></textarea>
+        
+                                <div>
+                                    <span class="count">140</span>
+                                    <button>Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        
+                    <div class="thread">
+                        <div class="tweet">
+                            <img src="images/rockit.png">
+        
+                            <div class="body">
+                                <div class="title">@ROCKIT_BOOTCAMP</div>
+                                <div class="message">Hey who wants to teach?</div>
+                            </div>
+                        </div>
+        
+                        <div class="replies">
+                            <form class="compose">
+                                <textarea placeholder="Compose new Tweet..."></textarea>
+        
+                                <div>
+                                    <span class="count">140</span>
+                                    <button>Send</button>
+                                </div>
+                            </form>
+        
+                            <div class="tweet">
+                                <img src="images/brad.png">
+        
+                                <div class="body">
+                                    <div class="title">@bradwestfall</div>
+                                    <div class="message">I do!</div>
+                                </div>
+                            </div>
+        
+                            <div class="tweet">
+                                <img src="images/rockit.png">
+        
+                                <div class="body">
+                                    <div class="title">@ROCKIT_BOOTCAMP</div>
+                                    <div class="message">sweet!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </main>
             </div>
-
-            <div class="thread">
-                <div class="tweet">
-                    <img src="images/rockit.png">
-
-                    <div class="body">
-                        <div class="title">@ROCKIT_BOOTCAMP</div>
-                        <div class="message">Hey who wants to teach?</div>
-                    </div>
+        
+<!-- bagian kanan -->
+            <div class="col-sm-2 well">
+                <div class="thumbnail">
+                    <p>Upcoming Events:</p>
+                    <img src="paris.jpg" alt="Paris" width="400" height="300">
+                    <p><strong>Paris</strong></p>
+                    <p>Fri. 27 November 2015</p>
+                    <button class="btn btn-primary">Info</button>
                 </div>
-
-                <div class="replies">
-                    <form class="compose">
-                        <textarea placeholder="Compose new Tweet..."></textarea>
-
-                        <div>
-                            <span class="count">140</span>
-                            <button>Send</button>
-                        </div>
-                    </form>
-
-                    <div class="tweet">
-                        <img src="images/brad.png">
-
-                        <div class="body">
-                            <div class="title">@bradwestfall</div>
-                            <div class="message">I do!</div>
-                        </div>
-                    </div>
-
-                    <div class="tweet">
-                        <img src="images/rockit.png">
-
-                        <div class="body">
-                            <div class="title">@ROCKIT_BOOTCAMP</div>
-                            <div class="message">sweet!</div>
-                        </div>
-                    </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
                 </div>
             </div>
         </div>
-    </main>
-
+    </div>
+    
+   
     <!-- Handlebars Templates -->
     <script id="template-tweet" type="text/x-handlebars-template">
         <div class="tweet">
@@ -149,5 +212,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Navbar---Apple.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
