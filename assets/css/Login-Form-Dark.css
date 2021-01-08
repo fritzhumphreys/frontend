@@ -70,3 +70,13 @@
   transform: translateY(1px);
 }
 
+.col-md-12.col-xl-12.offset-xl-0 {
+  background-color: blue;
+}
+
+body {
+}
+
+.col-md-6 {
+}
+
